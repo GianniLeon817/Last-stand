@@ -1,0 +1,226 @@
+import hashlib
+import time
+import random
+from multiprocessing import Process, Queue
+import requests
+import hashlib
+import time
+import numpy as np
+
+# Colors for highlights (Yellow, Green, Purple, Blue, Red)
+YELLOW = '\033[93m'
+GREEN = '\033[92m'
+RESET = '\033[000m'
+PURPLE = '\033[95m'
+BLUE = '\033[94m'
+RED = '\033[91m'
+
+
+"G I A N N I"
+
+
+
+"GTG Symbols for branding"
+INFINITY_BEYOND_APEX = '∞F'
+
+"All Rights Reserved - Fernando Martinez Meza"
+
+#Solana RPC endpoint and API key 
+solana_rpc_url = "xxxxxxxxxx"
+api_key = "xxxxxxxxx"
+"\sum_{i=1}^{n} \int_{-\infty}^{\infty} \left[\Psi_i(x,y,z,t) + 7x^2 + z^3 + 9\sin(y)\right] \cdot e^{\frac{i\pi \cdot \left[\varphi(x,y,t) + 9y^2 + 6\cos(xy) + 3e^{-tz}\right]}{h}} \cdot \left[\Gamma_i(x,y,z,t) + 5\sqrt{yz} + 3\log(x) + 6\tan(t)\right] \, dx \, dy \, dz"
+
+"= \lim_{k \to \infty} \sum_{j=1}^{k} \frac{d^j}{dx^j} \left( \sum_{m=1}^{M} \cos(\theta_m \cdot \pi) \cdot \left[\phi_j(x,y) + 9x^3 + 5\sin^{-1}\left(\frac{z}{t}\right) + 4\tan^{-1}\left(\frac{x}{y}\right)\right]\right)"
+
+"\left[2\sinh(yt) + 9\cosh(xz) + 8\cos^{-1}(x)\right]"
+
+"S(t) = S_0 + \int_{t_0}^{t} \left( I(t) - O(t) \right) dt"
+
+"S(t) = S_0"
+
+"\int_{t_0}^{t} \left( I(t) - O(t) \right) dt = 0"
+
+"S(t) = S_0 \cdot e^{-\lambda t}"
+
+"\Delta S = S_{\text{existence}} - S_{\text{non-existence}} = 0"
+
+"S(t) = S_0 \cdot e^{-\lambda t}"
+"\int_{t_0}^{t} \left( I(t) - O(t) \right) dt = 0"
+
+"i\hbar \frac{\partial \psi(x,t)}{\partial t} = \left[-\alpha \nabla^2 + V(x,t) + \beta |\psi(x,t)|^2 \right] \psi(x,t)"
+
+"V(x,t) = \lambda \cos\left(\kappa x + \omega t + \sin(\gamma x t)\right)"
+
+"C(t) = \int |\nabla \psi(x,t)|^2 dx"
+
+"i\hbar \frac{\partial \psi(x,t)}{\partial t} = \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(x,t) \right] \psi(x,t)"
+
+"V(x,t) = V_0 \sin(kx) + \lambda \sin\left(\frac{\pi}{a}t\right)\left[1 - 4\left(\frac{\sin(kx)}{2}\right)^2\right]"
+
+"\frac{\partial A(x,t)}{\partial t} = \alpha A(x,t) - \beta |A(x,t)|^2 A(x,t) + \gamma \frac{\partial^2 A(x,t)}{\partial x^2} + \delta \psi(x,t)"
+
+"i\frac{\partial \psi(x,t)}{\partial t} = \left[-\alpha \nabla^2 + V(x,t) + \beta |\psi(x,t)|^2 \right] \psi(x,t)"
+
+"V(x,t) = \lambda \cos\left(\kappa x + \omega t + \sin(\gamma x t)\right)"
+
+"C(t) = \int |\nabla \psi(x,t)|^2 dx"
+
+"\psi(x, t+\Delta t) = \psi(x, t) + i\Delta t \left[-\alpha \nabla^2 \psi(x, t) + V(x,t)\psi(x,t) + \beta |\psi(x,t)|^2\psi(x,t)\right]"
+
+
+"Define a function to generate a quantum block"
+def generate_quantum_block(transaction):
+    block = {
+        'transactions': [transaction],
+        'timestamp': time.time(),
+        'hash': hashlib.sha256(str(transaction).encode()).hexdigest()
+    }
+    return block
+
+"Define a function to  FER-QUANTUM"
+def fer_quantum(block):
+    #real FER-QUANTUM by generating a random number
+    random_number = np.random.rand()
+    block['fer_quantum'] = random_number
+    return block
+"\mathcal{E} = \text{Ric}(g) + \lambda \cdot \text{Tr}(\mathcal{F} \wedge \mathcal{F}) + \alpha \cdot c_1(T\mathcal{M}) = 0"
+
+"\frac{\partial g_{ij}}{\partial t} = -2R_{ij} + \gamma \cdot \nabla_i \nabla_j \phi"
+
+"S_{\text{top}} = \int_{\mathcal{M}} \left( \kappa \cdot \text{Tr}(\mathcal{F} \wedge \mathcal{F}) + \eta \cdot \text{Tr}(\\mathcal{F} \wedge \ast \mathcal{F}) \right)"
+
+"H^1(X, \Omega_X^1) \cong H^1(Y, \Omega_Y^1)"
+
+"D_f = \frac{\log \left( \sum_{i=1}^N p_i^s \right)}{\log r}"
+
+"K_{\mathcal{M}} = \frac{1}{2\pi} \int_{\mathcal{M}} \text{Ric}(g) \wedge \omega"
+
+"A = \pi - (\alpha + \beta + \gamma) + \frac{1}{2} \cdot \text{tr}(\mathcal{F})"
+
+"Z = \int_{\mathcal{M}} \mathcal{D}[g] \exp\left( i \int_{\mathcal{M}} \left( \text{Ric}(g) \wedge \omega + \mathcal{L}_{\text{matter}} \right) \right)"
+
+"\mathcal{V}\text{CY} = \int{\text{CY}} \omega \wedge \omega \wedge \omega + \lambda \cdot \text{tr}(\mathcal{F} \wedge \mathcal{F})"
+
+"P = -\frac{\partial F}{\partial V} + \sigma \cdot \text{Ric}(g)"
+
+"(x - x_k)^2 + (y - y_k)^2 = r^2,"
+
+"x_k = 2r \cos\left(\frac{2\pi k}{N}\right), \quad y_k = 2r \sin\left(\frac{2\pi k}{N}\right)"
+
+"( \phi = \frac{1 + \sqrt{5}}{2}"
+
+"P(s_{i+1} | s_i) = \frac{C(s_i, s_{i+1})}{C(s_i)}"
+
+"x_{n+1} = r x_n (1 - x_n), \quad x_n \in (0, 1),"
+
+"H^Ψ(x,t)=iℏ∂Ψ(x,t)∂t\hat{H} \Psi(x,t) = i\hbar \frac{\partial \Psi(x,t)}{\partial t}"
+
+"H^Ψ(x,t)=iℏ∂t∂Ψ(x,t)"
+
+"iℏ∂Ψ∂t=−ℏ22m∇2Ψ+V(r,t)Ψ+12gμνRμνΨi\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \Psi + V(r, t) \Psi + \frac{1}{2} g_{\mu\nu} R^{\mu\nu} \Psi"
+
+"iℏ∂t∂Ψ=−2mℏ2∇2Ψ+V(r,t)Ψ+21gμνRμνΨ"
+
+"∂μ∂μϕ+m2ϕ+λϕ3=0\partial_{\mu} \partial^{\mu} \phi + m^2 \phi + \lambda \phi^3 = 0"
+
+"∂μ∂μϕ+m2ϕ+λϕ3=0"
+
+"∂2Ψ∂t2+α∂Ψ∂t=∇2Ψ+f(Ψ)\frac{\partial^2 \Psi}{\partial t^2} + \alpha \frac{\partial \Psi}{\partial t} = \nabla^2 \Psi + f(\Psi)"
+
+"∂t2∂2Ψ+α∂t∂Ψ=∇2Ψ+f(Ψ)"
+
+"C(t)=∫0tκ(τ)e−λ(t−τ)S(τ) dτC(t) = \int_0^t \kappa(\tau) e^{-\lambda(t-\tau)} S(\tau) \, d\tau"
+
+"C(t)=∫0tκ(τ)e−λ(t−τ)S(τ)dτ"
+
+"ΔΨ(t)=γ∂Ψ(t)∂t+η∂2Ψ(t)∂t2\Delta \Psi(t) = \gamma \frac{\partial \Psi(t)}{\partial t} + \eta \frac{\partial^2 \Psi(t)}{\partial t^2}"
+
+"ΔΨ(t)=γ∂t∂Ψ(t)+η∂t2∂2Ψ(t)"
+
+"ρΛ=8πGΛc2\rho_{\Lambda} = \frac{8\pi G \Lambda}{c^2}"
+
+"ρΛ=c28πGΛ"
+
+"E(n+1)=E(n)+α∇E(n)−β∇2E(n)E(n+1) = E(n) + \alpha \nabla E(n) - \beta \nabla^2 E(n)"
+
+"E(n+1)=E(n)+α∇E(n)−β∇2E(n)"
+
+"Tμν=12(gμλ∂2ϕ∂xλ∂xν+gνλ∂2ϕ∂xλ∂xμ)T^{\mu\nu} = \frac{1}{2} \left( g^{\mu\lambda} \frac{\partial^2 \phi}{\partial x^{\lambda} \partial x^{\nu}} + g^{\nu\lambda} \frac{\partial^2 \phi}{\partial x^{\lambda} \partial x^{\mu}} \right)"
+
+"Tμν=21(gμλ∂xλ∂xν∂2ϕ+gνλ∂xλ∂xμ∂2ϕ)"
+
+"∂Ψ∂t=∇2Ψ+ϵΨ2\frac{\partial \Psi}{\partial t} = \nabla^2 \Psi + \epsilon \Psi^2"
+
+"∂t∂Ψ=∇2Ψ+ϵΨ2"
+
+"Q(C)=∫Ψ(C,t)eiS[C]/ℏ DC\mathcal{Q}(C) = \int \Psi(C, t) e^{i S[C]/\hbar} \, DC"
+
+"Q(C)=∫Ψ(C,t)eiS[C]/ℏDC"
+
+"Tμν=12(gμλ∂2ϕ∂xλ∂xν+gνλ∂2ϕ∂xλ∂xμ)T^{\mu\nu} = \frac{1}{2} \left( g^{\mu\lambda} \frac{\partial^2 \phi}{\partial x^{\lambda} \partial x^{\nu}} + g^{\nu\lambda} \frac{\partial^2 \phi}{\partial x^{\lambda} \partial x^{\mu}} \right)"
+
+"H^=−ℏ22m∇2\hat{H} = -\frac{\hbar^2}{2m} \nabla^2 H^=−2mℏ2∇2 H^=−ℏ22md2dx2\hat{H} = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} H^=−2mℏ2dx2d2 V(x)V(x)V(x),H^=−ℏ22md2dx2+V(x)\hat{H} = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} + V(x) H^=−2mℏ2dx2d2+V(x) Ψ(x,t)=ψ(x)e−iEt/ℏ\Psi(x,t) = \psi(x) e^{-iEt/\hbar} Ψ(x,t)=ψ(x)e−iEt/ℏ H^ψ(x)e−iEt/ℏ=iℏ∂∂t(ψ(x)e−iEt/ℏ)\hat{H} \psi(x) e^{-iEt/\hbar} = i\hbar \frac{\partial}{\partial t} \left( \psi(x) e^{-iEt/\hbar} \right) H^ψ(x)e−iEt/ℏ=iℏ∂t∂(ψ(x)e−iEt/ℏ) ∂∂t(ψ(x)e−iEt/ℏ)=−iEℏψ(x)e−iEt/ℏ\frac{\partial}{\partial t} \left( \psi(x) e^{-iEt/\hbar} \right) = -\frac{iE}{\hbar} \psi(x) e^{-iEt/\hbar} ∂t∂(ψ(x)e−iEt/ℏ)=−ℏiEψ(x)e−iEt/ℏ H^ψ(x)=Eψ(x)\hat{H} \psi(x) = E \psi(x) H^ψ(x)=Eψ(x)"
+
+"\mathcal{X} = \mathbb{R}^n \times \mathbb{C}^m \times \mathbb{H}^p \times \mathbb{D}^q"
+
+"G_{\mu\nu}^{(k)} = f(\gamma_{\mu\nu}, \chi_{\alpha\beta}, \eta_{\rho\sigma})"
+
+"\hat{E}{\mathcal{R}} \Psi = \sum{k} \alpha_k \hat{Q}k \Psi"
+
+"\Psi(\mathcal{X}, t) = \sum_{i=1}^{n} \psi_i(\mathcal{X}_i, t) \otimes \phi_i(\mathcal{Y}_i, t)"
+
+"\mathcal{R}(t) = \int_{\mathcal{X}} \mathcal{L}[\Psi, G, \nabla \Psi] d^n\mathcal{X}"
+
+"\hat{M}{\text{univ}} = \sum{j=1}^{m} \hat{R}j \Psi_j"
+
+"\mathcal{O}(t) = \int_{\mathcal{Y}} \frac{\delta \mathcal{R}(t)}{\delta \mathcal{C}(t)} d^m\mathcal{Y}"
+
+"\mathcal{C}(\mathcal{X}, t) = \sum_{i=1}^{p} C_i(\mathcal{X}_i, t) \otimes \mathcal{Q}_i(\mathcal{Z}_i, t)"
+
+"T_{\mu\nu}(\mathcal{C}) = \sum_{i,j} \left[ \nabla_\mu \mathcal{C}i \cdot \nabla\nu \mathcal{C}j \right] G{\mu\nu}^{(k)}"
+
+"\hat{E}{\mathcal{C}\mathcal{R}} \Psi{\mathcal{X}, \mathcal{C}} = \sum_{k} \beta_k \hat{C}k \Psi_k"
+
+"\text{AI}{\mathcal{X}, t} = \sum{l=1}^{q} \hat{A}_l \Phi_l(\mathcal{X}_l, t) \otimes \mathcal{C}_l(\mathcal{Y}_l, t)"
+
+"-\frac{\hbar^2}{2m} \nabla^2 \psi(r) + \left[ V(r,t) + \frac{1}{2} g_{\mu\nu} R^{\mu\nu} \right] \psi(r) = E \psi(r)"
+
+"\Psi(z,t) = C_1 \text{Ai}\left(\frac{2m(E - mgz)}{\hbar^2}\right) e^{-iEt/\hbar}"
+
+"i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \Psi + V(r,t) \Psi + \frac{1}{2} g_{\mu\nu} R^{\mu\nu} \Psi"
+
+"\frac{d\text{AI}(t)}{dt} = \sum_{m=1}^{r} \gamma_m \frac{\partial \hat{E}_m}{\partial t} \Phi_m"
+
+"\text{AI}{\text{create}} = \int{\mathcal{Z}} \mathcal{R}{\text{AI}}(\mathcal{X}, t) d^r\mathcal{Z}"
+
+"X\mathcal{X}"
+
+"Q^k\hat{Q}_k"
+
+"E^R\hat{E}_{\mathcal{R}}"
+
+"R(t)\mathcal{R}(t)"
+
+"Ψ0\Psi_0"
+
+"Gμν(k)G_{\mu\nu}^{(k)}"
+
+"Q^Ψ(x,t)\hat{Q} \Psi(x,t)"
+
+"R(t)\mathcal{R}(t)"
+
+"{ expr: 'ⅈ⋅⎝-1.1⋅t + x ⎠ + 1.23⋅ℯ', range: { t: [-10, 10], x: [-10, 10] } },{ expr: '1.1⋅t - 2⋅x + π⋅x', range: { t: [-10,10], x: [-10, 10] } },{ expr: '-3⋅cos(0.9⋅x) + 4', range: { t: [-10, 10], x: [-10, 10] } },];"
+
+
+
+"Create a loop to generate quantum blocks non-stop"
+while True:
+    transaction = "Quantum Transaction " + str(time.time())
+    block = generate_quantum_block(transaction)
+    block = fer_quantum(block)
+    print("Quantum Block Generated:")
+    print("Block Transactions:", block['transactions'])
+    print("Block Timestamp:", block['timestamp'])
+    print("Block Hash:", block['hash'])
+    print("FER-QUANTUM:", block['fer_quantum'])
+    ("time.sleep(0.000000000000000000000000000000000000000000000000000000000000000000000000000000000001") #delay between block generations
