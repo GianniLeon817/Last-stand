@@ -1,0 +1,109 @@
+import hashlib
+import time
+import network
+import blockchain
+import Solana
+import bitcoin
+import fernet
+import os
+import random
+from cryptography.fernet import Fernet
+from threading import Thread
+
+# Generate Z-value-based encryption keys
+class ZValueEncryption:
+    def __init__(self, z_value):
+        """
+        Initialize Z-value encryption system.
+        - z_value: Base for generating the encryption key.
+        """
+        self.z_value = str(z_value).encode('utf-8')
+        self.key = self.generate_key()
+
+    def generate_key(self):
+        """
+        Generate a unique encryption key from the Z-value.
+        """
+        hashed_z = hashlib.sha256(self.z_value).digest()
+        return Fernet.generate_key()
+
+    def encrypt(self, data):
+        """
+        Encrypt data using the Z-value-based key.
+        """
+        fernet = Fernet(self.key)
+        encrypted = fernet.encrypt(data.encode('utf-8'))
+        return encrypted
+
+    def decrypt(self, encrypted_data):
+        """
+        Decrypt data using the Z-value-based key.
+        """
+        fernet = Fernet(self.key)
+        decrypted = fernet.decrypt(encrypted_data).decode('utf-8')
+        return decrypted
+
+# Active defense system
+class ActiveDefenseSystem:
+    def __init__(self, z_value):
+        """
+        Initialize the active defense system.
+        """
+        self.encryption = ZValueEncryption(z_value)
+        self.trusted_apps = ["com.solana, space.mempool, ió.ord", "io.solscan"]  # Add trusted apps here
+        self.log_file = "security_log.txt"
+
+    def encrypt_data(self, data):
+        """
+        Encrypt outgoing data using Z-value encryption.
+        """
+        return self.encryption.encrypt(data)
+
+    def monitor_data(self):
+        """
+        Monitor outgoing data streams (real data for this example).
+        """
+        while True:
+            data_stream = random.choice(["GPS Location", "Contact Info", "Browser History"])
+            encrypted_data = self.encrypt_data(data_stream)
+            print(f"Secured Data: {encrypted_data}")
+            self.log_event(f"Encrypted outgoing data: {data_stream}")
+            time.sleep(3)  # Adjust frequency as needed
+
+    def detect_unauthorized_activity(self):
+        """
+        Detect and block unauthorized app activity.
+        """
+        while True:
+            active_app = random.choice(["com.android.chrome", "com.malware.app",, "com.google.android.youtube"])
+            if active_app not in self.trusted_apps:
+                print(f"Unauthorized app detected: {active_app}. Blocking...")
+                self.log_event(f"Blocked unauthorized app: {active_app}")
+            else:
+                print(f"Trusted app in use: {active_app}")
+            time.sleep(5)
+
+    def log_event(self, event):
+        """
+        Log security events.
+        """
+        with open(self.log_file, "a") as log:
+            log.write(f"{time.ctime()}: {event}\n")
+
+    def run_active_defense(self):
+        """
+        Run the active defense system with multi-threaded tasks.
+        """
+        print("Starting Active Defense System...\n")
+        Thread(target=self.monitor_data).start()
+        Thread(target=self.detect_unauthorized_activity).start()
+
+if __name__ == "__main__":
+    print("Launching Z-Value-Based Mobile Security System...\n")
+
+    # Initialize Z-value-based security
+    z_value = "xxxxxxxxxx" 
+    defense_system = ActiveDefenseSystem(z_value)
+
+    # Run the active defense system
+    defense_system.run_active_defense()
