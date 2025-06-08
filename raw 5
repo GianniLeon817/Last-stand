@@ -1,0 +1,32 @@
+import hashlib
+import time
+import numpy as np
+
+# Define a function to generate a quantum block
+def generate_quantum_block(transaction):
+    block = {
+        'transactions': [transaction],
+        'timestamp': time.time(),
+        'hash': hashlib.sha256(str(transaction).encode()).hexdigest()
+    }
+    return block
+
+# Define a function to  FER-QUANTUM
+def fer_quantum(block):
+    # real FER-QUANTUM by generating a random number
+    # In a real-world implementation, this would involve actual quantum computations
+    random_number = np.random.rand()
+    block['fer_quantum'] = random_number
+    return block
+
+# Create a loop to generate quantum blocks non-stop
+while True:
+    transaction = "Quantum Transaction " + str(time.time())
+    block = generate_quantum_block(transaction)
+    block = fer_quantum(block)
+    print("Quantum Block Generated:")
+    print("Block Transactions:", block['transactions'])
+    print("Block Timestamp:", block['timestamp'])
+    print("Block Hash:", block['hash'])
+    print("FER-QUANTUM:", block['fer_quantum'])
+    time.sleep(0.0000000000000001)  # delay between block generations
