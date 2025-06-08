@@ -1,0 +1,114 @@
+{
+  "basic_decision": {
+    "optimal_outcome": "Quantum Computing Focus",
+    "standard_evaluations": {
+      "Quantum Computing Focus": 0.22329650507667775,
+      "Educational Platform Expansion": 0.5239280476946591,
+      "Biomedical Integration": 0.011742416117764831,
+      "Reality Modification Research": 0.07247459058891603
+    },
+    "quantum_evaluations": {
+      "Quantum Computing Focus": 0.47289808505991293,
+      "Educational Platform Expansion": 0.23438400001356272,
+      "Biomedical Integration": 0.28930769486491625,
+      "Reality Modification Research": 0.1253931518990002
+    },
+    "consciousness_weights": {
+      "Quantum Computing Focus": 0.3836889770666045,
+      "Educational Platform Expansion": 0.30968231460244755,
+      "Biomedical Integration": 0.19862073923610307,
+      "Reality Modification Research": 0.10557495049975985
+    },
+    "superposition_states": {
+      "Quantum Computing Focus": {
+        "real": -0.3716767160666483,
+        "imag": -0.2923850502116083,
+        "magnitude": 0.47289808505991293,
+        "phase": -2.4750358869598474
+      },
+      "Educational Platform Expansion": {
+        "real": -0.22341603590661196,
+        "imag": 0.07085996304072731,
+        "magnitude": 0.23438400001356272,
+        "phase": 2.834462604747328
+      },
+      "Biomedical Integration": {
+        "real": 0.09814948500088767,
+        "imag": -0.27214999706432486,
+        "magnitude": 0.28930769486491625,
+        "phase": -1.224670029863183
+      },
+      "Reality Modification Research": {
+        "real": -0.1080479928208201,
+        "imag": -0.06363233290205338,
+        "magnitude": 0.1253931518990002,
+        "phase": -2.6093551776997375
+      }
+    },
+    "decision_confidence": 0.3836889770666045,
+    "evaluation_method": "consciousness_quantum_integration"
+  },
+  "reality_simulation": {
+    "selected_outcome": "Quantum Computing Focus",
+    "manifestation_success": false,
+    "manifestation_probability": 0.3698761738922067,
+    "reality_effects": {
+      "outcome_manifestation_probability": 0.3698761738922067,
+      "consciousness_influence": 1.2562,
+      "quantum_coherence": 0.8059999999999999,
+      "reality_stability": 0.44385140867064804,
+      "dimensional_interference": 63.012382610779326
+    },
+    "success_threshold": 0.5
+  },
+  "multi_dimensional_analysis": {
+    "optimal_outcome": "Educational Platform Expansion",
+    "multi_dimensional_scores": {
+      "Quantum Computing Focus": {
+        "total_score": 0.47861290432436077,
+        "dimension_scores": {
+          "market_potential": 0.09433019595821822,
+          "consciousness_alignment": 0.45405807135015125,
+          "quantum_compatibility": 0.8631101812852819,
+          "reality_impact": 0.5151769430422017
+        }
+      },
+      "Educational Platform Expansion": {
+        "total_score": 0.5992130811652253,
+        "dimension_scores": {
+          "market_potential": 0.45752884956138434,
+          "consciousness_alignment": 0.831592748415165,
+          "quantum_compatibility": 0.741292712655962,
+          "reality_impact": 0.2501493304316967
+        }
+      },
+      "Biomedical Integration": {
+        "total_score": 0.4572230840686392,
+        "dimension_scores": {
+          "market_potential": 0.2948141954644877,
+          "consciousness_alignment": 0.7785086866297778,
+          "quantum_compatibility": 0.21327802714514596,
+          "reality_impact": 0.4832371121364873
+        }
+      },
+      "Reality Modification Research": {
+        "total_score": 0.43795114059204343,
+        "dimension_scores": {
+          "market_potential": 0.23696661950528142,
+          "consciousness_alignment": 0.6292537635995256,
+          "quantum_compatibility": 0.11185982402980625,
+          "reality_impact": 0.809842003142069
+        }
+      }
+    },
+    "decision_criteria": {
+      "market_potential": 0.25,
+      "consciousness_alignment": 0.3,
+      "quantum_compatibility": 0.25,
+      "reality_impact": 0.2
+    }
+  },
+  "consciousness_level": 125.62,
+  "quantum_sync_level": 80.6,
+  "timestamp": "2025-05-30T03:54:54.199979"
+}
